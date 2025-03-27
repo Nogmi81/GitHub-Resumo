@@ -4,8 +4,14 @@ Este guia rápido apresenta os comandos Git mais utilizados, categorizados para 
 
 ## Configuração
 
-* `git config --global user.name "Seu Nome"`: Define o nome de usuário global para commits.
+* `git config user.name`: Define o nome de usuário global para commits.
 * `git config --global user.email "seuemail@exemplo.com"`: Define o e-mail global para commits.
+
+## Verificar Usuário
+
+* `git config --global user.name "Seu Nome"`: Para verificar o nome do usuário
+* `git config user.email`: Para verificar o e-mail do usuário
+* `git config --list`: Para verificar todas as configurações do Git no sistema (incluindo o nome e e-mail)
 
 ## Inicialização e Clonagem
 
