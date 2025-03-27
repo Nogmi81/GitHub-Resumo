@@ -1,5 +1,3 @@
-Claro! Aqui está um README com os principais comandos do Git, organizado para facilitar o uso:
-
 # Principais Comandos Git
 
 Este guia rápido apresenta os comandos Git mais utilizados, categorizados para fácil referência.
