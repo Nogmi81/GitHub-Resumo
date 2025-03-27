@@ -15,8 +15,10 @@ Este guia rápido apresenta os comandos Git mais utilizados, categorizados para 
 
 ## Inicialização e Clonagem
 
-* `git init`: Inicializa um novo repositório Git no diretório atual.
+* `git init`: Inicializa um novo repositório Git no diretório atual. Com esse comando o git criar a pasta oculta .git
 * `git clone <URL_do_repositório>`: Clona um repositório Git existente para um novo diretório.
+
+Qualquer arquivo criado/modificado neste diretório será monitorado pelo Git.
 
 ## Alterações e Commits
 
@@ -33,6 +35,68 @@ Este guia rápido apresenta os comandos Git mais utilizados, categorizados para 
 * `git checkout <nome_do_branch>`: Muda para o branch especificado.
 * `git merge <nome_do_branch>`: Mescla as alterações do branch especificado no branch atual.
 * `git branch -d <nome_do_branch>`: Exclui o branch especificado.
+
+A comunidade de desenvolvimento de software estabeleceu algumas convenções para nomear branches no Git, visando clareza, organização e facilidade de colaboração. As mais comuns incluem:
+
+**Branches Principais:**
+
+* **main/master:**
+    * É a branch principal, representando o estado estável e pronto para produção do código.
+    * "main" está gradualmente substituindo "master" devido a questões de inclusão.
+* **develop:**
+    * Usada para integração de novas funcionalidades e correções antes de serem mescladas na "main".
+    * Serve como a branch de desenvolvimento principal.
+
+**Branches de Funcionalidades (Feature Branches):**
+
+* Usadas para desenvolver funcionalidades específicas.
+    * Nomes descritivos, como "feature/adicionar-login", "feature/nova-interface".
+    * A palavra "feature" serve para caracterizar que essa branch é para o desenvolvimento de uma nova funcionalidade.
+
+**Branches de Correções (Bugfix Branches):**
+
+* Criadas para corrigir erros e bugs.
+    * Nomes como "bugfix/corrigir-erro-login", "bugfix/ajuste-responsividade".
+    * A palavra "bugfix" serve para caracterizar que essa branch é para correção de algum problema.
+
+**Branches de Hotfix:**
+
+* Usadas para correções urgentes em produção.
+    * Nomes como "hotfix/correcao-seguranca", "hotfix/ajuste-emergencial".
+    * A palavra "hotfix" caracteriza que essa branch é para correção de um problema emergencial, em produção.
+
+**Outras Convenções:**
+
+* Use palavras curtas e descritivas.
+* Separe palavras com hífens (-).
+* Evite caracteres especiais.
+* Mantenha os nomes em letras minúsculas.
+  
+Seguir essas convenções facilita a compreensão do fluxo de trabalho e a colaboração em projetos Git.
+
+## Checkout
+
+O comando `git checkout` essencialmente permite que você navegue e manipule diferentes versões do seu projeto.
+
+**1. Alternando entre Branches:**
+
+* A função mais comum do `git checkout` é alternar entre diferentes branches. Isso permite que você trabalhe em funcionalidades separadas, corrija bugs ou explore versões antigas do seu código sem afetar a branch principal.
+    * Exemplo: `git checkout minha-nova-funcionalidade`
+
+**2. Criando Novas Branches:**
+
+* O `git checkout` também pode ser usado para criar novas branches. Isso é útil para iniciar o desenvolvimento de uma nova funcionalidade ou para isolar correções de bugs. O comando -b indica a criação da branch
+    * Exemplo: `git checkout -b nova-branch`
+
+**3. Verificando Commits Antigos:**
+
+* O `git checkout` permite que você navegue para commits específicos no histórico do seu projeto. Isso é útil para inspecionar versões antigas do código ou para depurar problemas.
+
+**Pontos importantes:**
+
+* **HEAD:** O `git checkout` atualiza o HEAD, que é um ponteiro para o commit atual. Isso determina qual versão do seu projeto você está trabalhando.
+* **Diretório de trabalho:** o comando git checkout, altera os arquivos no seu diretório de trabalho, para que eles correspondam aos arquivos armazenados na branch que você esta verificando.
+* **Cuidado com as alterações não comitadas:** Ao trocar de branch, certifique-se de que suas alterações locais estejam comitadas ou guardadas com `git stash`, caso contrário, elas podem ser perdidas.
 
 ## Remotos
 
