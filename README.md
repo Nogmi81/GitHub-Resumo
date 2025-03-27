@@ -55,7 +55,7 @@ Este guia rápido apresenta os comandos Git mais utilizados, categorizados para 
 
 ## Recursos Adicionais
 
-* Documentação oficial do Git: \[https://git-scm.com/]
+* Documentação oficial do Git: https://git-scm.com/
 
 
 Este README fornece uma visão geral dos comandos Git mais comuns. Para informações mais detalhadas e comandos avançados, consulte a documentação oficial do Git.
