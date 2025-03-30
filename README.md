@@ -38,12 +38,12 @@ Qualquer arquivo criado/modificado neste diretório será monitorado pelo Git.
 
 ## Merge
 
-* `git merge <nome_do_branch>`: Mescla as alterações do branch especificado no branch atual.
-Obs: se você estiver dentro do branch master irá informar o nome do branch oonde ocorreu a alteração. Se estiver dentro do branch, por exemplo: develop irá executar o comando `git merge master`
-
-A comunidade de desenvolvimento de software estabeleceu algumas convenções para nomear branches no Git, visando clareza, organização e facilidade de colaboração. As mais comuns incluem:
+* `git merge <nome_do_branch>`: Mescla as alterações do branch especificado no branch atual.  
+Obs: se você estiver dentro do branch master irá informar o nome do branch aonde ocorreu a alteração. Se estiver dentro de outro branch, por exemplo develop, irá executar o comando `git merge master`
 
 **Branches Principais:**
+
+A comunidade de desenvolvimento de software estabeleceu algumas convenções para nomear branches no Git, visando clareza, organização e facilidade de colaboração. As mais comuns incluem:
 
 * **main/master:**
     * É a branch principal, representando o estado estável e pronto para produção do código.
