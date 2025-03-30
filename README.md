@@ -32,9 +32,14 @@ Qualquer arquivo criado/modificado neste diretório será monitorado pelo Git.
 
 * `git branch`: Lista todos os branches no repositório local.
 * `git branch <nome_do_branch>`: Cria um novo branch.
-* `git checkout <nome_do_branch>`: Muda para o branch especificado.
-* `git merge <nome_do_branch>`: Mescla as alterações do branch especificado no branch atual.
 * `git branch -d <nome_do_branch>`: Exclui o branch especificado.
+* `git checkout -b <nome_do_branch>`: cria um novo branch (-b) e altera para ele. São dois comandos em 1 (novo branch e checkout).
+* `git checkout <nome_do_branch>`: Muda para o branch especificado.
+
+## Branches
+
+* `git merge <nome_do_branch>`: Mescla as alterações do branch especificado no branch atual.
+Obs: se você estiver dentro do branch master irá informar o nome do branch oonde ocorreu a alteração. Se estiver dentro do branch, por exemplo: develop irá executar o comando `git merge master`
 
 A comunidade de desenvolvimento de software estabeleceu algumas convenções para nomear branches no Git, visando clareza, organização e facilidade de colaboração. As mais comuns incluem:
 
