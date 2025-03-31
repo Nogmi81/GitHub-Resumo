@@ -32,7 +32,7 @@ Qualquer arquivo criado/modificado neste diretório será monitorado pelo Git.
 
 * `git branch`: Lista todos os branches no repositório local.
 * `git branch <nome_do_branch>`: Cria um novo branch.
-* `git branch -d <nome_do_branch>`: Exclui o branch especificado.
+* `git branch -d <nome_do_branch>`: Exclui um branch especificado.
 * `git checkout -b <nome_do_branch>`: cria um novo branch (-b) e altera para ele. São dois comandos em 1 (novo branch e checkout).
 * `git checkout <nome_do_branch>`: Muda para o branch especificado.
 
