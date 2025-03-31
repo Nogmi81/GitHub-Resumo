@@ -113,7 +113,7 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 ## Histórico e Inspeção
 
 * `git log`: Exibe o histórico de commits.
-* * `git log meuarquivo`: Exibe o histórico de commits de um arquivo em específico.
+* `git log meuarquivo`: Exibe o histórico de commits de um arquivo em específico.
 * `git diff`: Mostra as diferenças entre o diretório de trabalho e a área de preparação.
 * `git diff --cached`: Mostra as diferenças entre a área de preparação e o último commit.
 
