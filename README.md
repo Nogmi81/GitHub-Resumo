@@ -128,7 +128,7 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 
 * `git rm <arquivo>`: Remove um arquivo do diretório de trabalho e da área de preparação.
 * `git mv <arquivo_antigo> <arquivo_novo>`: Renomeia um arquivo.
-* `git tag`: serve para marcar um ponto específico no histórico do repositório, geralmente utilizado para identificar versões de software (como "v1.0", "v2.0", etc.). As tags são como "etiquetas" que você coloca em commits específicos, facilitando a identificação e o gerenciamento de versões importantes do seu projeto. Ex: `git tag v1.0 a98668ab880ba9059cf587de851b989f09c71fbb`, onde a98668ab880ba9059cf587de851b989f09c71fbb é hash do commit que pode ser obtido através do comando `git log`.
+* `git tag`: serve para marcar um ponto específico no histórico do repositório, geralmente utilizado para identificar versões de software (como "v1.0", "v2.0", etc.). As tags são como "etiquetas" que você coloca em commits específicos, facilitando a identificação e o gerenciamento de versões importantes do seu projeto. Ex: `git tag v1.0 a98668ab880ba9059cf587de851b989f09c71fbb`, onde a98668ab880ba9059cf587de851b989f09c71fbb é o *hash* do commit que pode ser obtido através do comando `git log`.
 
 ## Recursos Adicionais
 
