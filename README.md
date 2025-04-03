@@ -115,7 +115,9 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 * `git log`: Exibe o histórico de commits.
 * `git log meuarquivo`: Exibe o histórico de commits de um arquivo em específico.
 * `git diff`: Mostra as diferenças entre o diretório de trabalho e a área de preparação.
-* `git diff --cached`: Mostra as diferenças entre a área de preparação e o último commit.
+* `git diff --cached` ou `git diff --staged`: Mostra as diferenças entre a área de preparação e o último commit. Os dois comandos são funcionalmente idênticos.
+* `git diff <branch_1> <branch_2>`: Esse comando mostra a diferença entre duas branches. Por exemplo, podemos verficar a diferença a branch develop e a branch master com o seguinte comando: `git diff develop master`. Podemos também especificar o arquivo: `git diff develop master -- <nome_do_arquivo>`.
+* `git diff --stat develop master`: O comando --stat (estatística) fornece um resumo das alterações, mostrando quais arquivos foram modificados e quantas linhas foram adicionadas ou removidas.
 
 ## Desfazendo Alterações
 
@@ -129,7 +131,8 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 * `git rm <arquivo>`: Remove um arquivo do diretório de trabalho e da área de preparação.
 * `git mv <arquivo_antigo> <arquivo_novo>`: Renomeia um arquivo.
 * `git tag`: serve para marcar um ponto específico no histórico do repositório, geralmente utilizado para identificar versões de software (como "v1.0", "v2.0", etc.). As tags são como "etiquetas" que você coloca em commits específicos, facilitando a identificação e o gerenciamento de versões importantes do seu projeto. Ex: `git tag v1.0 a98668ab880ba9059cf587de851b989f09c71fbb`, onde a98668ab880ba9059cf587de851b989f09c71fbb é o *hash* do commit que pode ser obtido através do comando `git log`.
-
+* `git tag -d <nome_tag>`: esse comando permite excluir uma tag. Vamos supor que haja uma tag v1.0 criada como no exemplo acima, para excluí-la execute o comando `git tag -d v1.0`
+  
 ## Recursos Adicionais
 
 * Documentação oficial do Git: https://git-scm.com/
