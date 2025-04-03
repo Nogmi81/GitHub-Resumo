@@ -103,9 +103,11 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 * **Diretório de trabalho:** o comando git checkout, altera os arquivos no seu diretório de trabalho, para que eles correspondam aos arquivos armazenados na branch que você esta verificando.
 * **Cuidado com as alterações não comitadas:** Ao trocar de branch, certifique-se de que suas alterações locais estejam comitadas ou guardadas com `git stash`, caso contrário, elas podem ser perdidas.
 
-## Remotos
+## Repositório Local x Remotos
 
 * `git remote add origin <URL_do_repositório>`: Adiciona um repositório remoto chamado "origin". ATENÇÃO: O comando `git remote add origin <URL_do_repositório>` não adiciona o seu repositório local ao GitHub (ou qualquer outro repositório remoto). Ele apenas cria uma conexão entre o seu repositório local e o repositório remoto.
+* `git remote rm <URL_do_repositório>`: O comando `git remote rm <URL_do_repositório>` é usado para remover uma conexão remota do seu repositório local.
+* `git push origin main`: Quando seu repositórios remoto e local estão conectados (seja através do git remote ou clone) esse comando enviará todos os commits do seu branch local "main" que ainda não estão presentes no branch remoto "main". Esse comando funciona se o upstream já estiver configurado (entre o branch local e remoto). Na dúvida opte sempre pelo comando `git push -u origin main`.
 * `git push origin <nome_do_branch>`: Envia os commits locais para o branch especificado no repositório remoto.
 * `git pull origin <nome_do_branch>`: Obtém as alterações do branch especificado no repositório remoto e mescla no branch local.
 * `git fetch`: Baixa todos os históricos do repositório remoto, mas não mescla as alterações.
