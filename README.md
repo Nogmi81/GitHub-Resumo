@@ -105,7 +105,7 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 
 ## Remotos
 
-* `git remote add origin <URL_do_repositório>`: Adiciona um repositório remoto chamado "origin". ATENÇÃO: O comando git remote add origin <URL_do_repositório> não adiciona o seu repositório local ao GitHub (ou qualquer outro repositório remoto). Ele apenas cria uma conexão entre o seu repositório local e o repositório remoto.
+* `git remote add origin <URL_do_repositório>`: Adiciona um repositório remoto chamado "origin". ATENÇÃO: O comando `git remote add origin <URL_do_repositório>` não adiciona o seu repositório local ao GitHub (ou qualquer outro repositório remoto). Ele apenas cria uma conexão entre o seu repositório local e o repositório remoto.
 * `git push origin <nome_do_branch>`: Envia os commits locais para o branch especificado no repositório remoto.
 * `git pull origin <nome_do_branch>`: Obtém as alterações do branch especificado no repositório remoto e mescla no branch local.
 * `git fetch`: Baixa todos os históricos do repositório remoto, mas não mescla as alterações.
