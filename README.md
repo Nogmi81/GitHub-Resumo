@@ -125,8 +125,15 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 
 * `git reset --hard <commit>`: Retorna o repositório para o estado do commit especificado, descartando todas as alterações posteriores.
 * `git revert <commit>`: Cria um novo commit que desfaz as alterações do commit especificado.
-* `git stash`: Salva temporariamente as alterações não commitadas.
-* `git stash pop`: Aplica as alterações salvas pelo `git stash` e remove-as da lista de stashes.
+**O comando git restore é usado para descartar alterações feitas em arquivos no seu repositório.**
+   Desfazer alterações em arquivos modificados (não comitados): `git restore <nome-do-arquivo>` e vários: `git restore arquivo1.txt arquivo2.js` 
+   Restaurar arquivos para o estado do último commit
+   Cancelar git add em arquivos já adicionados à staging area
+
+Restaurar arquivos adicionados ao staging (git add) — sem apagar alterações: `git restore --staged <nome-do-arquivo>`. Isso tira o arquivo da staging area, como se você desfizesse o git add, mas mantém suas alterações no arquivo.
+
+Restaurar completamente (unstage + descartar alterações): `git restore --source=HEAD --staged --worktree <nome-do-arquivo>`  
+
 
 ## Limpando o Git
 
@@ -148,6 +155,8 @@ Para apagar realmente os arquivos, execute o comando: `git clean -f` (`-f` force
 * `git mv <arquivo_antigo> <arquivo_novo>`: Renomeia um arquivo.
 * `git tag`: serve para marcar um ponto específico no histórico do repositório, geralmente utilizado para identificar versões de software (como "v1.0", "v2.0", etc.). As tags são como "etiquetas" que você coloca em commits específicos, facilitando a identificação e o gerenciamento de versões importantes do seu projeto. Ex: `git tag v1.0 a98668ab880ba9059cf587de851b989f09c71fbb`, onde a98668ab880ba9059cf587de851b989f09c71fbb é o *hash* do commit que pode ser obtido através do comando `git log`.
 * `git tag -d <nome_tag>`: esse comando permite excluir uma tag. Vamos supor que haja uma tag v1.0 criada como no exemplo acima, para excluí-la execute o comando `git tag -d v1.0`
+* `git stash`: Salva temporariamente as alterações não commitadas.
+* `git stash pop`: Aplica as alterações salvas pelo `git stash` e remove-as da lista de stashes.
   
 ## Recursos Adicionais
 
