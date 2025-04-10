@@ -130,9 +130,9 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 
 ## Limpando o Git
 
-O comando git clean remove arquivos não rastreados do seu diretório de trabalho. Isso inclui arquivos que você criou, mas ainda não adicionou ao Git, bem como arquivos gerados por processos de build. É uma ferramenta útil para limpar seu diretório de trabalho, mas é importante usá-la com cuidado, pois as alterações feitas por ele são irreversíveis. 
+O comando git clean remove arquivos não rastreados do seu diretório de trabalho. Isso inclui arquivos que você criou, mas ainda não adicionou ao Git, bem como arquivos gerados por processos de **build**. É uma ferramenta útil para limpar seu diretório de trabalho, mas é importante usá-la com cuidado, pois as alterações feitas por ele são irreversíveis. 
 
-Para verificar arquivos sem excluí-los execute o comando `git clean n (ou git clean-dry-run)`.
+Para verificar arquivos *sem excluí-los* execute o comando `git clean n (ou git clean-dry-run)`.
 
 ## Outros Comandos Úteis
 
