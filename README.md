@@ -128,6 +128,12 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 * `git stash`: Salva temporariamente as alterações não commitadas.
 * `git stash pop`: Aplica as alterações salvas pelo `git stash` e remove-as da lista de stashes.
 
+## Limpando o Git
+
+O comando git clean remove arquivos não rastreados do seu diretório de trabalho. Isso inclui arquivos que você criou, mas ainda não adicionou ao Git, bem como arquivos gerados por processos de build. É uma ferramenta útil para limpar seu diretório de trabalho, mas é importante usá-la com cuidado, pois as alterações feitas por ele são irreversíveis. 
+
+Para verificar arquivos sem excluí-los execute o comando `git clean n (ou git clean-dry-run)`.
+
 ## Outros Comandos Úteis
 
 * `git rm <arquivo>`: Remove um arquivo do diretório de trabalho e da área de preparação.
