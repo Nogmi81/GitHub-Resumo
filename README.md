@@ -126,7 +126,7 @@ O comando `git checkout` essencialmente permite que você navegue e manipule dif
 * `git reset --hard <commit>`: Retorna o repositório para o estado do commit especificado, descartando todas as alterações posteriores.
 * `git revert <commit>`: Cria um novo commit que desfaz as alterações do commit especificado. Em vez de apagar o commit original do histórico, o `git revert` preserva o histórico, adicionando um novo commit que "desfaz" as mudanças do commit alvo.
   
-**O comando git restore é usado para descartar alterações feitas em arquivos no seu repositório.**
+**O comando `git restore` é usado para descartar alterações feitas em arquivos no seu repositório.**
   * Desfazer alterações em arquivos modificados (não comitados): `git restore <nome-do-arquivo>` e vários: `git restore arquivo1.txt arquivo2.js` 
   * Restaurar arquivos para o estado do último commit
   * Cancelar git add em arquivos já adicionados à staging area
